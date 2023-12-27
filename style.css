@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --green-color: #3cb815;
+    --light-green-color: #c0eb7b;
+    --orange-color: #ff7e00;
+    --light-orange-color: #f75f1d;
+    --text-color: #1a2428;
+    --bg-color: #fff;
+}
+.bi{
+    margin-right: 8px;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 100px;
+    transition: 0.5s
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+}
+.logo .bx{
+    font-size: 24px;
+    color: var(--orange-color);
+}
+.navbar{
+    display: flex;
+    column-gap: 0.9rem;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.3rem 0.8rem;
+}
+.navbar a:hover,
+.navbar .home-active{
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: 0.5s;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+body{
+    background: white;
+}
+
+/* this is for weather app*/
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(145deg,#8c00fe, #8a547c, #11bbc7b7);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 7vh;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    width: 20px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    cursor: pointer;
+
+
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px; 
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.container img{
+    width: 400px;
+    position: absolute;
+    bottom: -500px;
+    right: 200px;
+    }
+    
+/* this is for setbar*/
+#set-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: initial;
+}
+.setbar{
+    position: absolute;
+    top: -570px;
+    left: 100px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+    text-align: left;
+}
+
+.setbar a{
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+    color: var(--text-color);
+}
+
+.setbar a:hover,
+.setbar .set-active{
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: 0.5s;
+}
+.setbar a:hover,
+.setbar .set-active{
+    border-radius: 00.5rem;
+    color: var(--bg-color);
+}
+.setbar.active{
+    top: 100%
+}
+
+/* this is for sub-menu*/
+
+.sub-menu-1{
+    display: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+header ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: whitesmoke;
+    margin-top: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  
+}
+header ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+header ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -30px;
+    margin-left: 130px;
+    background: whitesmoke;
+}
+
+/*for profile*/
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 6%;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu-wrap1{
+    background: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+    font-size: 14px;
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+/*this is for media queries*/
+    
+@media (max-width: 600px){
+
+#set-icon{
+    display: none;
+}
+header{
+    padding: 12px 4%;
+}
+#menu-icon{
+    display: initial;
+}
+.navbar{
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+    text-align: left;
+}
+.navbar a{
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+}
+.navbar a:hover,
+.navbar .home-active{
+    border-radius: 00.5rem;
+    color: var(--bg-color);
+}
+.navbar.active{
+    top: 100%
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -30px;
+    margin-left: 130px;
+    background: whitesmoke;
+}
+.sub-menu-1{
+    margin-left: 100px;
+}
+
+header ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+}
